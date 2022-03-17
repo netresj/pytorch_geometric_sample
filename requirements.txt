@@ -1,0 +1,11 @@
+networkx
+pandas
+numpy
+scikit-learn
+matplotlib
+lightgbm
+
+jupyterlab
+jupyterlab_code_formatter
+isort
+black

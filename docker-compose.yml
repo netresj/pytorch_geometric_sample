@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  jupyter:
+    build: .
+    image: torch-geo:cpu
+    container_name: jupyter
+    volumes:
+      - ./working:/working
+    ports:
+      - "8888:8888"
+    command: jupyter lab --ip 0.0.0.0 --allow-root --no-browser --NotebookApp.token=''
